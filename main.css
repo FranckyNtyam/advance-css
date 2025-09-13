@@ -107,9 +107,18 @@ main {
 }
 
 article {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-self: center;
     border-top: 1 solid #00ddff;
     padding-top: 16px;
     margin-top: 12px;
+}
+
+.post-content {
+    display: grid
+  
 }
 
 .post-date {
@@ -133,8 +142,9 @@ article {
 figure img {
     max-width: 100%;
     height: auto;
-    display: block;
     border: 0;
+    
+   
 }
 
 .post-content p {
