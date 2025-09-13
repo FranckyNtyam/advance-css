@@ -102,36 +102,38 @@ nav li {
     font-size: 1.6rem;
 }
 /*Style Main*/
-main {
-    display: block;
-}
+
 
 article {
-    display: flex;
-    justify-content: center;
-    justify-content: center;
-    align-self: center;
-    border-top: 1 solid #00ddff;
-    padding-top: 16px;
-    margin-top: 12px;
+    display:grid ;
+    grid-template-columns: 1fr 6fr;
+    
 }
+
+
 
 .post-content {
-    display: grid
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.post-content:last-child {
+    border-bottom: 1px solid #333;
+}
 .post-date {
     font-family: 'Lora', serif;
     color: #666;
     font-size: 0.95rem;
-    margin-bottom: 8px;
+    border-right: 1px solid #333;
+
 }
 
 .post-content h2 {
     font-family: 'Lora', serif;
     font-size: 1.25rem;
-    margin: 0 0 8px;
+    
+    
 }
 
 .post-content h2 a {
@@ -144,6 +146,7 @@ figure img {
     height: auto;
     border: 0;
     
+    
    
 }
 
@@ -152,7 +155,7 @@ figure img {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    margin: 8px 0;
+    
 }
 .post-content a {
     color: #333;
