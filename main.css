@@ -1,0 +1,150 @@
+/*import font(Lora)*/
+ @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+/*Utilities*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*Layout contenair*/
+div {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/*style Header*/
+
+header {
+    margin: 20px 0 28px;
+}
+
+h1 {
+    font-family: 'Lora',serif;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+h1 a {
+    color: #333;
+    text-decoration: none;
+}
+
+/*Style Navigation*/
+
+nav a {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-family: 'Lora',serif;
+    color: #666;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #666;
+}
+
+nav a:hover {
+    color: #00ddff;
+}
+
+nav a:active {
+    color: #DEB887;
+}
+
+/*Style Main*/
+main {
+    display: block;
+}
+
+article {
+    border-top: 1 solid #00ddff;
+    padding-top: 16px;
+    margin-top: 12px;
+}
+
+.post-date {
+    font-family: 'Lora', serif;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.post-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    margin: 0 0 8px;
+}
+
+.post-content h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 0;
+}
+
+.post-content p {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+.post-content a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    color: #00ddff;
+}
+
+/* Small-screen */
+
+@media (min-width: 600px) {
+    div {
+        max-width: 720px;
+    }
+
+    .post-date {
+        font-size: 1rem;
+    }
+
+    .post-content h2 {
+        font-size: 1.35rem;
+    }
+}
+
+/* Large screen*/
+
+@media (min-width: 1024px) {
+    div {
+        max-width: 980px;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+}
