@@ -117,8 +117,8 @@ article {
 }
 
 .post-content {
-    display: grid
-  
+    display: grid;
+  gap: 12px;
 }
 
 .post-date {
